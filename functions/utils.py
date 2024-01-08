@@ -1,7 +1,7 @@
 from bson import ObjectId
-from ..db.models.user import User
-from ..db.client import db_users_client
-from ..db.schemas.user import user_schema,users_schema
+from db.models.user import User
+from db.client import db_users_client
+from db.schemas.user import user_schema,users_schema
 
 
 def search_user(key: str, value: str | ObjectId):
