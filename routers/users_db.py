@@ -1,9 +1,10 @@
 from fastapi import APIRouter,HTTPException
-from ..db.models.user import User
-from ..db.client import db_users_client
-from ..db.schemas.user import user_schema,users_schema
+
+from db.models.user import User
+from db.client import db_users_client
+from db.schemas.user import user_schema,users_schema
 from bson import ObjectId
-from ..functions.utils import search_user,get_user_object
+from functions.utils import search_user,get_user_object
 router = APIRouter(
   prefix="/users",
   tags=["users"]

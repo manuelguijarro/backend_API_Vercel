@@ -1,6 +1,6 @@
 from time import time
 from fastapi import FastAPI, __version__
-from  routers import  basic_auth_users,users_db,lotr_characters_db
+from  routers.users_db import  users_db
 
 
 app = FastAPI()
