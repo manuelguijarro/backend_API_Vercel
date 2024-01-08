@@ -1,11 +1,14 @@
+import os
 from time import time
 from fastapi import FastAPI, __version__
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
+from dotenv import load_dotenv
 
+load_dotenv()
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
-
+PORT = os.getenv("PORT")
 html = f"""
 <!DOCTYPE html>
 <html>
