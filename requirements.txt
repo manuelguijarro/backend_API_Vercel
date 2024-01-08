@@ -3,7 +3,7 @@ python-jose
 passlib
 bcrypt
 pymongo
-os
+
 python-dotenv
 python-multipart
 pydantic>=1.8.0,<2.0.0

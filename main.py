@@ -1,11 +1,7 @@
-import os
 from time import time
 from fastapi import FastAPI, __version__
-from dotenv import load_dotenv
 
-load_dotenv()
 app = FastAPI()
-PORT = os.getenv("PORT")
 
 
 @app.get("/")
